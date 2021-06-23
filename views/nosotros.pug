@@ -1,0 +1,43 @@
+extends ./layout/index
+
+block contenido
+    main.container.mt-5 
+        .row 
+            .col-md-5
+                img(src="img/nosotros.jpg" alt="Nosotros" class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote  ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus sed tortor eget semper. 
+                |Nunc ultrices, diam non gravida lacinia, augue est commodo purus, sed tincidunt augue nisi vel tortor. 
+                |Aliquam non dui nisi. Vivamus ac massa mauris. In tincidunt dictum euismod. In dictum iaculis lorem a vehicula.
+
+                p ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dapibus sed tortor eget semper. 
+                |Nunc ultrices, diam non gravida lacinia, augue est commodo purus, sed tincidunt augue nisi vel tortor. 
+                |Aliquam non dui nisi. Vivamus ac massa mauris. In tincidunt dictum euismod. In dictum iaculis lorem a vehicula.
+
+                p ornare egestas nunc ut dapibus. Nam congue neque nec nunc luctus viverra. Cras vitae venenatis massa. 
+                |Sed cursus sed ante et placerat. Donec a neque in est viverra mattis. Quisque et enim libero. 
+                |In sit amet tellus malesuada, lacinia ligula quis, tincidunt tortor. Duis et sapien a tellus rhoncus rutrum id at lacus.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono de seguridad" class="img-fluid mb-4") 
+                    h2.mb-4 Seguridad 
+                    p Sed cursus sed ante et placerat. Donec a neque in est viverra mattis. Quisque et enim libero. 
+                    |In sit amet tellus malesuada, lacinia ligula quis, tincidunt tortor. Duis et sapien a tellus rhoncus rutrum id at lacus.
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono de destino" class="img-fluid mb-4") 
+                    h2.mb-4 Mejores destinos
+                    p Sed cursus sed ante et placerat. Donec a neque in est viverra mattis. Quisque et enim libero. 
+                    |In sit amet tellus malesuada, lacinia ligula quis, tincidunt tortor. Duis et sapien a tellus rhoncus rutrum id at lacus.
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono de precios" class="img-fluid mb-4") 
+                    h2.mb-4 A los mejores precios
+                    p Sed cursus sed ante et placerat. Donec a neque in est viverra mattis. Quisque et enim libero. 
+                    |In sit amet tellus malesuada, lacinia ligula quis, tincidunt tortor. Duis et sapien a tellus rhoncus rutrum id at lacus.
+
+
+//- Aqui se usan las variables que definimos en el render, de estas maneras
+//- p= viajes
+//- p #{viajes}

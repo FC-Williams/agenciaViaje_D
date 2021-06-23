@@ -1,0 +1,42 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janeiro
+        em Aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p 
+                |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus ut velit ac mattis. 
+                | Aenean ultrices libero feugiat purus lacinia, et mollis metus volutpat. Quisque sit amet vehicula mi. Sed iaculis diam est, ac pharetra diam luctus at. Vestibulum blandit tortor dui. 
+                | Maecenas semper augue in auctor faucibus. Sed auctor ac ante vitae sodales. 
+                | Maecenas semper augue in auctor faucibus. Sed auctor ac ante vitae sodales. 
+                p 
+                |Nullam pulvinar lacus a est volutpat, non pharetra nulla porttitor. 
+                | Integer quis ante commodo, ullamcorper lacus et, ultricies nunc. Quisque ac luctus elit. 
+                | In iaculis sodales est sed mattis. Morbi sit amet elementum sapien.
+                | In iaculis sodales est sed mattis. Morbi sit amet elementum sapien.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Imagen de nosotros" class="img-fluid")
+
+        include ./layout/bloque_viaje
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 22 de abril 2022 - 30 de abril 2022
+                        p.precio 2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+            include ./layout/bloque_testimoniales
+
+//- Aqui se usan las variables que definimos en el render, de estas maneras
+//- p= viajes
+//- p #{viajes}
